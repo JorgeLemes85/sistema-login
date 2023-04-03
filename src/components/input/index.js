@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { InputCustomizado } from "./styles";
 
 const Input = () => {
   return (
-    <input/>
-  )
-}
+    <InputCustomizado />
+  );
+};
 
-export default Input
+export default Input;
+
+
+
