@@ -1,31 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React from "react";
 import { Container, From } from "./styles";
 import Input from "../../Components/Input";
 import Botao from "../../Components/Botao";
 
-
-const Login = () => { // ok
-  const [loading, setLoading] = useState()
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    try {
-      setLoading(true)
-      alert('Login')
-      setLoading(false)
-    }
-    catch (err) {
-      alert('Algo deu errado com o login' + err)
-    }
-  }
-
+const Login = () => {
   const handleChange = (event) => {
     console.log("Digitando...", event.target.name, event.target.value);
   };
 
   return (
-    <Container> 
+    <Container>
       <From>
         <h1>Faça o seu Login 👋</h1>
         <Input
@@ -40,12 +25,7 @@ const Login = () => { // ok
           onChange={handleChange}
           type="password"
         />
-        <Botao 
-        type="submit"
-        text="Entrar!" 
-        onChange={handleSubmit} 
-        // disabled={}
-        />
+        <Botao type="submit" text="Entrar!" onChange={handleChange} />
 
         <div>
           <p>Não possui conta?</p>

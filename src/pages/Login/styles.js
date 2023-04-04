@@ -6,7 +6,7 @@ export const Container = styled.div `
   align-items: center;
   height: 100vh;
   min-width: 100vh;
-  background-color: lightblue;
+  background-color: #383838;
 `
 export const From = styled.form `
 display: flex;
